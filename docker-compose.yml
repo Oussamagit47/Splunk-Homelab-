@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  victim_web:
+    build: ./victim_web
+    container_name: victim_web
+    ports:
+      - "8081:80"
+    mem_limit: 256m
+    env_file:
+      - .env
+
+  victim_ssh:
+    image: rastasheep/ubuntu-sshd:18.04
+    container_name: victim_ssh
+    ports:
+      - "2222:22"
+    mem_limit: 128m
+    environment:
+      - ROOT_PASS=root
+    env_file:
+    - .env 

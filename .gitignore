@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.env
+docker-compose.override.yml
+*.log
+.vscode/
+secrets/

@@ -1,6 +1,7 @@
 # SOC HomeLab — Mode d'emploi 
 
 > **Objectif :** démarrer la stack, exécuter des attaques simples depuis l'attaquant et visualiser les détections dans Splunk.
+<img width="2076" height="1155" alt="mermaid-diagram-2025-10-28-212601" src="https://github.com/user-attachments/assets/f1e330c4-c921-48f3-b998-85bb870a24b0" />
 
 ---
 

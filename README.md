@@ -6,8 +6,8 @@
 
 ## Pré-requis
 
-* Docker & Docker Compose installés.
-* Avoir créé un token HEC dans Splunk Web (Settings → Data Inputs → HTTP Event Collector).
+* Docker & Docker Compose installés(Docker Desktop).
+* Avoir créé un token HEC dans Splunk Web (suivre étape 1) (Settings → Data Inputs → HTTP Event Collector).
 * Copier `.env.example` → `.env` et remplir `SPLUNK_HOST`, `HEC_TOKEN`, `HEC_INDEX`. **Ne pas committer `.env`.**
 
 ---
@@ -15,7 +15,7 @@
 ## 1 - Démarrer Splunk (docker)
 
 Si Splunk n'est pas déjà en service, lancez-le rapidement (lab uniquement) :
-
+Pour réduire la consommation mémoire, ajustez l'option --memory ou modifiez les paramètres WSL.
 ```bash
 docker run -d --name splunk \
   --memory=3g --memory-swap=3g --cpus=2 \
